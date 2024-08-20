@@ -177,6 +177,7 @@ local theme = lush(function(injected_functions)
 		-- Uncomment and edit if you want more specific syntax highlighting.
 
 		Constant({ fg = raw_sienna }), -- (preferred) any constant
+		-- Constant  { },
 		String({ fg = green_smoke }), --   a string constant: "this is a string"
 		StringDelimiter({ fg = costa_del_sol }),
 		-- Character      { }, --  a character constant: 'c', '\n'
@@ -185,7 +186,9 @@ local theme = lush(function(injected_functions)
 		-- Float          { }, --    a floating point constant: 2.3e10
 
 		Identifier({ fg = biloba_flower }), -- (preferred) any variable name
+		-- Identifier      { },
 		Function({ fg = goldenrod }), -- function name (also: methods for classes)
+		-- Function      { },
 
 		Statement({ fg = perano }), -- (preferred) any statement
 		-- Conditional    { }, --  if, then, else, endif, switch, etc.
@@ -202,8 +205,10 @@ local theme = lush(function(injected_functions)
 		-- PreCondit      { }, --  preprocessor #if, #else, #endif, etc.
 
 		Type({ fg = koromiko }), -- (preferred) int, long, char, etc.
+		-- Type           { },
 		-- StorageClass   { }, -- static, register, volatile, etc.
 		Structure({ fg = morning_glory }), --  struct, union, enum, etc.
+		-- Structure      { },
 		-- Typedef        { }, --  A typedef
 
 		Special({ fg = hsl(155, 30, 65) }), -- highland -- (preferred) any special symbol
@@ -215,7 +220,8 @@ local theme = lush(function(injected_functions)
 
 		Underlined({ gui = "underline" }), -- (preferred) text that stands out, HTML links
 		Bold({ gui = "bold" }),
-		Italic({ gui = "italic" }),
+		Italic({  }),
+		-- Italic     { },
 
 		-- ("Ignore", below, may be invisible...)
 		-- Ignore         { }, -- (preferred) left blank, hidden  |hl-Ignore|
